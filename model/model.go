@@ -1,4 +1,4 @@
-package main
+package model
 type ClassList struct {
 	TmpList []struct {
 		Blyxrs             string `json:"blyxrs"`
@@ -57,11 +57,11 @@ type ClassList struct {
 	Sfxsjc string `json:"sfxsjc"`
 }
 type SearchResult struct {
-	jxb_id string
-	kch string
-	kch_id string
-	xf string
-	kcmc string
+	Jxb_id string
+	Kch    string
+	Kch_id string
+	Xf   string
+	Kcmc string
 
 }
 type DetailInfo struct {
@@ -170,7 +170,7 @@ type DetailInfoCommon struct {
 	Yqmc string `json:"yqmc"`
 }
 type DetailResult struct {
-	jxb_ids string
+	Jxb_ids string
 }
 type ChooseResult struct {
 	Msg  string `json:"msg"`
@@ -181,3 +181,4 @@ type Cookie struct {
 	BIGipServer string
 	TWFID string
 }
+
